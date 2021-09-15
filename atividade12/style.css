@@ -1,0 +1,32 @@
+.container {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+        "left rightTop"
+        "left rightBottom";
+}
+
+.block {
+    margin: 5px;
+}
+
+.left {
+    grid-area: left;
+    background: blue;
+}
+
+.right-top {
+    grid-area: rightTop;
+    background-image: linear-gradient(to right, red, yellow);
+}
+
+.right-bottom {
+    grid-area: rightBottom;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("xp.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 527px;
+}
