@@ -1,0 +1,25 @@
+<div class="item-movie">
+    <img src="{{ movie?.poster }}" alt="Poster do filme">
+
+    <div class="information">
+        <span class="name">{{ movie?.nome }}</span>
+
+        <div class="information-group">
+            <div class="year">
+                <span>{{ movie?.ano }}</span>
+            </div>
+            <div class="genre">
+                <span >{{ movie?.genero }}</span>
+            </div>
+        </div>
+
+        <div class="director">
+            <span class="key">Diretor: </span>
+            <span>{{ movie?.diretor }}</span>
+        </div>
+
+        <div class="description">
+            <span>{{ movie?.descricao }}</span>
+        </div>
+    </div>
+</div>

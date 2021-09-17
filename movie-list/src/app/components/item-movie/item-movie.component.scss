@@ -1,0 +1,61 @@
+.item-movie {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Jost", sans-serif;
+    padding: 16px;
+    margin: 16px;
+    border: 1px solid rgb(158, 158, 158);
+    border-radius: 6px;
+
+    img {
+        max-width: 335px;
+        max-height: 475px;
+        min-width: 335px;
+        min-height: 475px;
+    }
+
+    .information {
+        display: grid;
+        padding: 24px;
+
+        .name {
+            font-size: 46px;
+            font-weight: 700;
+        }
+
+        .information-group {
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 175px;
+            font-size: 24px;
+
+            .genre {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: fit-content;
+                background: #dbdbdb;
+                font-size: 18px;
+                padding: 3px 10px;
+                border-radius: 30px;
+            }
+        }
+
+        .year,
+        .director {
+            font-size: 24px;
+            display: inline-flex;
+
+            .key {
+                font-weight: 600;
+                margin-right: 8px;
+            }
+        }
+
+        .description {
+            font-size: 20px;
+        }
+    }
+}
